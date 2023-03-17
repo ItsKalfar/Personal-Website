@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="Sagar Gund">
+  <meta property="og:image" content="./assets/project.png">
+  <meta property="og:type" content="website">
+
+  <title>Sagar Gund</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+
+  <!-- CDN's -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+</head>
+
+<body>
+  <!--Loader-->
+  <div class="loaderDiv">
+    <div class="loader"></div>
+    <p>Loading page</p>
+  </div>
+  <!--Toaster-->
+  <div class="toaster"></div>
+  <!--Div for background-->
+  <div class="bg-div"></div>
+
+  <!-----------------------
+            HEADER
+    ------------------------->
+
+  <header class="header" id="header">
+    <div class="logo img"><img
+        src="./assets/logo.png"
+        alt="logo"></div>
+    <p class="logo initials" tabindex="1" href=""></p>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+        </li>
+        <li><a class="navbar-link" name="about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a></li>
+        <li><a class="navbar-link" name="skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+        </li>
+        <li><a class="navbar-link" name="projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+        </li>
+        <li><a class="navbar-link" name="education" onclick="scrollToSection(this),toggleNav()"
+            tabindex="8">Education</a></li>
+      </ul><a class="contactBtn button" name="getInTouch" tabindex="10" href="https://www.linkedin.com/in/sagar-gund-037b72255/"
+        target="_blank">Contact</a><ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon"
+        onclick="toggleNav()"></ion-icon>
+    </div><ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </header>
+
+  <!-----------------------
+          HOME SECTION
+    ------------------------->
+
+  <section class="section home-section" id="home" tabindex="42">
+    <div>
+      <h1>Hey, I'm <span class="name">Sagar</span></h1>
+      <p class="aboutShort">I'm a frontend and blockchain developer. I create elegant user interfaces using React, while also building decentralized applications with Ethereum and Solidity.</p><button
+        class="about-me-btn button" name="about" onclick="scrollToSection(this)" tabindex="2">About Me<ion-icon
+          name="chevron-forward-outline"></ion-icon></button>
+    </div>
+
+    <div class="imgDiv">
+      <img src="./assets/male.png" class="profile-image">
+    </div>
+ 
+  </section>
+
+  <!-----------------------
+          ABOUT SECTION
+    ------------------------->
+
+  <section id="about" class="section about-section" tabindex="11">
+    <div class="about-ill"><img src="./assets/aboutMemoji.png" alt="Memoji"></div>
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">Sagar Gund</h2>
+      <div class="professionContainer">
+        <p class="profession">Front-end Developer</p>
+        <p class="profession">Solidity Developer</p>
+      </div><br>
+      <p class="aboutLong">Hi there! I'm a frontend developer and blockchain developer with knowledge of React.js and the Ethereum ecosystem with Solidity. I have a passion for creating visually appealing and responsive web applications that provide excellent user experiences. I enjoy working with React and love the flexibility and scalability it offers for building dynamic web applications.</p><br>
+      <p class="aboutLong">
+        In addition to my frontend development skills, I have a keen interest in blockchain technology and the potential it holds for creating decentralized applications. I am proficient in Solidity and can create secure and tamper-proof smart contracts that run on the Ethereum blockchain.
+      </p><br>
+      <br><a class="button" href="https://rb.gy/yaqroz" target="_blank" tabindex="12">Resume<ion-icon
+          name="document-outline"></ion-icon></a>
+    </div>
+    <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/sagar-gund-037b72255/" aria-label="linkedin" class="linkedin" tabindex="13"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li id="github"><a target="_blank" href="https://www.github.com/ItsKalfar" aria-label="github" class="github" tabindex="14"><i
+            class="fab fa-github"></i></a></li>
+      <li id="twitter"><a target="_blank" href="https://www.twitter.com/HeyitsSagar20" aria-label="twitter" class="twitter" tabindex="16"><i
+            class="fab fa-twitter"></i></a></li>
+    </ul>
+  </section>
+
+  <!-----------------------
+        SKILLS SECTION
+    ------------------------->
+
+  <section class="section skill-section" id="skills" tabindex="17">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">My Skills<p>Tiles in <span>blue</span> are some of my major skills.</p>
+      </h1>
+      <div class="skill-container">
+        <div class="major"><img src="./assets/html_mcptab.svg" alt="Skill image 1">
+          <p>HTML</p>
+        </div>
+        <div class="major"><img src="./assets/css3_lhv35v.svg" alt="Skill image 1">
+          <p>CSS3</p>
+        </div>
+        <div class="major"><img src="./assets/sass.png" alt="Skill image 1">
+          <p>SCSS</p>
+        </div>
+        <div class="major"><img src="./assets/tw_nltigb.png" alt="Skill image 1">
+          <p>Tailwind Css</p>
+        </div>
+
+        <div class="major"><img src="./assets/javascript_swauvr.svg" alt="Skill image 1">
+          <p>JavaScript</p>
+        </div>
+        <div class="major"><img src="./assets/typeScript.png" alt="Skill image 1">
+          <p>TypeScript</p>
+        </div>
+        <div class="major"><img src="./assets/react_zwqsp1.svg" alt="Skill image 1">
+          <p>ReactJs</p>
+        </div>
+        <div class="major"><img src="./assets/next-logo.svg" alt="Skill image 1">
+          <p>NextJs</p>
+        </div>
+
+        <div class="major"><img src="./assets/solidity_logo.png" alt="Skill image 1">
+          <p>Solidity</p>
+        </div>
+        <div class="minor"><img src="./assets/chakraui.png" alt="Skill image 2">
+          <p>Chakra UI</p>
+        </div>
+        <div class="minor"><img src="./assets/redux.svg" alt="Skill image 3">
+          <p>Redux</p>
+        </div>
+
+
+        <div class="minor"><img src="./assets/c++_Logo.png" alt="Skill image 3">
+          <p>C++</p>
+        </div>
+        <div class="minor"><img src="./assets/github-logo_s0trsu.png" alt="Skill image 3">
+          <p>Git and GitHub</p>
+        </div>
+        <div class="minor"><img src="./assets/firebase_dwkgf4.png" alt="Skill image 3">
+          <p>Firebase</p>
+        </div>
+        <div class="minor"><img src="./assets/GraphQL_Logo.png" alt="Skill image 3">
+          <p>GraphQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------
+        PROJECT SECTION
+    ------------------------->
+  <section class="section main project-section" id="projects" tabindex="18">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">My recent work<p class="sectionDesc">
+            Here are a few past projects I've worked on. Want to see more?<a href="mailto:gundsagar02@gmail.com" tabindex="22">
+              Email me ></a>
+          </p>
+        </h1><img class="ProjectHeaderImage" src="./assets/project-head.png" alt="Project header image">
+      </div>
+      <div class="project card-container">
+   
+          <div class="project card 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/nft-marketplace.png" alt="Project image">
+            </div>
+            <br>
+            <h6>MyPlace - NFT marketplace</h6>
+            <p class="techstack"><span> Techstack </span> - Next.js, Tailwind CSS, Solidity, IPFS</p>
+            <p class="library"><span> Libraries </span> - Hardhat, Ethers.js, Axios</p>
+  
+            <div class="options">
+              <a class="viewElem" href="https://my-place-frontend.vercel.app" target="_blank"><ion-icon
+                  name="open-outline"></ion-icon></a>
+              <a class="githubElem" href="https://github.com/ItsKalfar/my-place-frontend" target="_blank"><ion-icon name="logo-github"></ion-icon></a>           
+            </div>
+          </div>
+      
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/dagri.png" alt="Project image">
+          </div>
+          <br>
+          <h6>DAgri</h6>
+          <p class="techstack"><span> Techstack </span> - Next.js, Tailwind CSS, Solidity</p>
+          <p class="library"><span> Libraries </span> - Ethers.js, Hardhat</p>
+
+          <div class="options">
+            <a class="viewElem" href="d-agri-frontend.vercel.app" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com/ItsKalfar/DAgri-Frontend" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+         
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/StartupLandingPage.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Startup Landing Page</h6>
+          <p class="techstack"><span> Techstack </span> - Next.js, Theme UI</p>
+          <p class="library"><span> Libraries </span> - Framer motion</p>
+
+          <div class="options">
+            <a class="viewElem" href="https://scintillating-muffin-d976db.netlify.app/" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com/ItsKalfar/StartupLanding-" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------------------
+        EDUCATION SECTIONS
+    ------------------------->
+
+  <section class="section education-section" id="education" tabindex="23">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">Education<p>These are some of my past qualifications.</p>
+      </h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/graduation.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">BE | Computer Engineering</h6>
+          <p class="instituteName">Zeal College of Engineering & Research, Pune, Maharshtra, India</p><br>     
+          <p class="status Pursuing">Persuing 2019-2023</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/high-school.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">HSC | Science</h6>
+          <p class="instituteName">Bhavan's College, Andheri (W), Mumbai, Maharshtra, India</p><br>
+          <p class="status Completed">Completed 2017-2019</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">State Secondary Certificate (SSC)</h6>
+          <p class="instituteName">D. J. High School, Jogeshwari (E), Mumbai, Maharshtra</p><br>
+
+          <p class="status Completed">Completed 2017</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-----------------------
+        FOOTER SECTION
+  ------------------------->
+
+  <footer class="footer" tabindex="35">
+    <div class="getInTouch">
+      <h3>Start a project?</h3>
+      <p>Interested in working together? We should queue up a time to chat.</p><a class="getInTouchBtn button"
+        target="_blank" href="mailto:gundsagar02@gmail.com" tabindex="36">Get in touch</a>
+    </div>
+    <div class="footerParent">
+
+      <div class="profInfo">
+        <div class="imgDiv">
+          <img src="./assets//project.png" alt="Profile Image">
+        </div>
+
+        <p>Sagar Gund<br>Mail me at <a href="mailto:gundsagar02@gmail.com" tabindex="37">gundsagar02@gmail.com</a>
+        </p>
+      </div>
+      <div class="reachMeOut">
+        <h3>Reach me out on</h3>
+        <ul class="social-menu">
+          <li id="linkedin"a href="https://www.linkedin.com/in/sagar-gund-037b72255/" class="linkedin" tabindex="38" aria-label="linkedin"><i
+                class="fab fa-linkedin-in"></i></a></li>
+          <li id="github"><a href="https://github.com/ItsKalfar" aria-label="github" class="github" tabindex="39"><i
+                class="fab fa-github"></i></a></li>
+          <li id="twitter"><a href="https://twitter.com/HeyitsSagar20" aria-label="twitter" class="twitter" tabindex="41"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="firebase.js"></script>
+  <script src="./commonScript.js"></script>
+  <script src="script.js"></script>
+
+  <!-- External scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init()</script>
+</body>
+
+</html>
